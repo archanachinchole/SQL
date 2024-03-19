@@ -19,3 +19,5 @@ select  * from students1 where marks>=70;
 ALTER table students1 drop email;
 
 select * FROM students1 WHERE name='Tiya';
+
+DELETE FROM students1 WHERE marks <= 70;
