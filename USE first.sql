@@ -1,5 +1,8 @@
-create database students1;
+create database first;
 USE first;
+CREATE table students1(id int primary key, name varchar(50), marks int, age int);
+
+alter table students1 add column email varchar(50);
 
 -- Update email for each student
 UPDATE students1 SET email = 'tiya@01.com' WHERE id = 1;
