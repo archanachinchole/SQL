@@ -8,11 +8,11 @@ UPDATE students1 SET email = 'jiya@03' WHERE id = 3;
 UPDATE students1 SET email = 'riya@04' WHERE id = 4;
 UPDATE students1 SET email = 'piya@05' WHERE id = 5;
 
-insert INTO students1(6,'jiji',80,4,'jiji@06'),
-                    (7,'jojo',70,5,'jojo@07');
+
 
 
 INSERT INTO students1 (id, name, marks, age, email)
 VALUES (6, 'jiji', 80, 4, 'jiji@06'),
        (7, 'jojo', 70, 5, 'jojo@07');
 
+select  * from students1 where marks>=70;
