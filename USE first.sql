@@ -1,3 +1,4 @@
+create database students1;
 USE first;
 
 -- Update email for each student
@@ -21,3 +22,6 @@ ALTER table students1 drop email;
 select * FROM students1 WHERE name='Tiya';
 
 DELETE FROM students1 WHERE marks <= 70;
+
+drop table student;
+drop table students;

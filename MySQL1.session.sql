@@ -1,3 +1,2 @@
-DELETE FROM students1 WHERE marks <= 70;
-
+drop table students;
 
