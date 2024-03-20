@@ -1,1 +1,1 @@
-SELECT * from teacher where subject='Math';
+select name from teacher where deparment=''

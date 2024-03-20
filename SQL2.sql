@@ -28,3 +28,6 @@ SELECT * from student where id=1;
 SELECT * from teacher where subject='Math';
 # No database beacuse Math is not exist Maths is exist
 
+select * from student where marks=70;
+select name from teacher where deparment=''
+
