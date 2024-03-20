@@ -1,2 +1,1 @@
-drop table students;
-
+SELECT * from teacher where subject='Math';

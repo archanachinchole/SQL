@@ -28,3 +28,4 @@ DELETE FROM students1 WHERE marks <= 70;
 
 drop table student;
 drop table students;
+
