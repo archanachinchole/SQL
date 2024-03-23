@@ -30,5 +30,6 @@ SELECT * from teacher where subject='Math';
 
 select * from student where marks=70;
 select name from teacher where deparment='IT';
-select name from teacher where deparment='IT';
 
+insert into student(id,name,class,batch) VALUES
+                   (4,'Siya','Math',2010);

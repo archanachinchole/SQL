@@ -1,1 +1,1 @@
-select name from teacher where deparment='IT';
+SELECT DISTINCT name from student;
