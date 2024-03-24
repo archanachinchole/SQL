@@ -70,4 +70,6 @@ select * from student where marks is NULL;
 #order by
 select marks from student order by marks DESC;
 select marks from student order by marks ASC;
+select name from student order by name DESC;
+
 
