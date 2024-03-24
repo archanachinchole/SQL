@@ -71,5 +71,6 @@ select * from student where marks is NULL;
 select marks from student order by marks DESC;
 select marks from student order by marks ASC;
 select name from student order by name DESC;
+select name from student order by name DESC;
 
 
