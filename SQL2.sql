@@ -19,6 +19,7 @@ insert into teacher(id, name, subject, deparment, student_id)values
 select  teacher.id, teacher.name, teacher.subject, teacher.deparment from teacher
 JOIN student on teacher.student_id = student.id where student.class='MCA';
 
+# use update for add a col. & values
 UPDATE student SET marks=70 WHERE id = 1;
 UPDATE student SET marks =78  WHERE id = 2;
 UPDATE student SET marks =80  WHERE id = 3;
@@ -57,5 +58,16 @@ select distinct name from student;
 SELECT * FROM student where id IN (1,2);
 SELECT * FROM student where id IN (2);
 
+# BETWEEN
+select * from student where id BETWEEN 1 and 4;
+select * from student where marks BETWEEN 70 and 80;
+select * from student where name BETWEEN 'Aakash' and 'Siya';
 
+
+#NULL
+select * from student where marks is NULL;
+
+#order by
+select marks from student order by marks DESC;
+select marks from student order by marks ASC;
 
