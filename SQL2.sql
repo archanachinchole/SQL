@@ -19,10 +19,17 @@ insert into teacher(id, name, subject, deparment, student_id)values
 select  teacher.id, teacher.name, teacher.subject, teacher.deparment from teacher
 JOIN student on teacher.student_id = student.id where student.class='MCA';
 
+UPDATE student SET marks=70 WHERE id = 1;
+UPDATE student SET marks =78  WHERE id = 2;
+UPDATE student SET marks =80  WHERE id = 3;
+
 # delect teacher from database
 DELETE from teacher where id=3;
 
 SELECT * from student where id=1;
+
+#Drop  TABLE
+alter table student drop column email;
 
 
 SELECT * from teacher where subject='Math';
@@ -33,3 +40,22 @@ select name from teacher where deparment='IT';
 
 insert into student(id,name,class,batch) VALUES
                    (4,'Siya','Math',2010);
+
+# like operater
+select * from student where name like '%A';
+select * from student where name like '%i';
+select * from student where name like '_i%';
+select * from student where name like 'A_%';
+select * from student where name like 's%a';
+
+
+
+# for distinct
+select distinct name from student;
+
+# in operator
+SELECT * FROM student where id IN (1,2);
+SELECT * FROM student where id IN (2);
+
+
+
