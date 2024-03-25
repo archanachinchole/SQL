@@ -72,5 +72,8 @@ select marks from student order by marks DESC;
 select marks from student order by marks ASC;
 select name from student order by name DESC;
 select name from student order by name DESC;
+select name from student order by name DESC;
+select YEAR from student order by YEAR DESC;
+
 
 
