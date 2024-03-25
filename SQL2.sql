@@ -62,6 +62,7 @@ SELECT * FROM student where id IN (2);
 select * from student where id BETWEEN 1 and 4;
 select * from student where marks BETWEEN 70 and 80;
 select * from student where name BETWEEN 'Aakash' and 'Siya';
+select * from student where id BETWEEN 0 and 4;
 
 
 #NULL
