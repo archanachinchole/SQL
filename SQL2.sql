@@ -103,6 +103,7 @@ select name,avg(marks) from student GROUP BY name having avg(marks)>50;
 SELECT batch, count(*) from student GROUP BY batch ORDER BY count(*) DESC;
 SELECT name, count(*) from student GROUP BY name ORDER BY count(*) DESC;
 
+
 SELECT name, SUM(marks) AS total_marks
 FROM student
 GROUP BY name
