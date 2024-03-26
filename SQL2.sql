@@ -77,4 +77,33 @@ select name from student order by name DESC;
 select YEAR from student order by YEAR DESC;
 
 
+#Having clause
+select batch, avg(marks) from student GROUP BY id;
+Select batch from student where marks>78 GROUP BY batch;
+select name, avg(marks) from student GROUP BY name;
+select name,batch, avg(marks) from student GROUP BY name,batch;
 
+SELECT 
+    id, 
+    marks, 
+    (SELECT AVG(marks) FROM student) AS average_marks
+FROM 
+    student
+GROUP BY id, marks;
+
+
+select name,avg(marks) from student GROUP BY name having avg(marks)>75;
+
+#update Marks id=4
+update student set marks=55 where id=4;
+
+select name,avg(marks) from student GROUP BY name having avg(marks)>50;
+
+#comb of GROUP by  or order by
+SELECT batch, count(*) from student GROUP BY batch ORDER BY count(*) DESC;
+SELECT name, count(*) from student GROUP BY name ORDER BY count(*) DESC;
+
+SELECT name, SUM(marks) AS total_marks
+FROM student
+GROUP BY name
+ORDER BY total_marks DESC;
