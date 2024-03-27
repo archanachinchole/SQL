@@ -115,3 +115,16 @@ FROM student
 GROUP BY name
 ORDER BY total_marks DESC;
 
+# GRANT AND REVOKE
+GRANT SELECT ON collage.student TO 'Siya'@'localhost';
+REVOKE SELECT ON collage.student FROM 'Siya'@'localhost';
+
+
+
+# TCL COMMENT
+start transaction;
+use collage;
+insert into student(id,name,class,batch,marks)values
+                    (5,'Tiya','Math', 2023,70);
+
+COMMIT;
