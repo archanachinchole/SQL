@@ -125,6 +125,6 @@ REVOKE SELECT ON collage.student FROM 'Siya'@'localhost';
 start transaction;
 use collage;
 insert into student(id,name,class,batch,marks)values
-                    (5,'Tiya','Math', 2023,70);
+                    (5,'Tiya','Math', 2023,78);
 
 COMMIT;
