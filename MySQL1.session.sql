@@ -1,1 +1,3 @@
-SELECT customer_id from customer INNER JOIN order1  ON customer.id = order1.id;    
+SELECT customer_id 
+FROM customer 
+RIGHT OUTER JOIN orders ON customer.id = orders.customer_id;

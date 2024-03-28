@@ -39,7 +39,10 @@ VALUES
 
 
 use first;
-SELECT customer_id from customer INNER JOIN order1  ON customer.id = order1.id;    
+SELECT customer_id from customer INNER JOIN order1  ON customer.id = order1.id; 
+SELECT customer_id from customer LEFT JOIN order1  ON customer.id = order1.id;    
+SELECT customer_id from customer RIGHT JOIN order1  ON customer.id = order1.id;    
+
 
 
                 
