@@ -11,7 +11,7 @@ insert INTO order(id,odate, customer2_id)values
                  (1,20-01-2010,3),
                  (2,10-12-2020,1),
                  (3,05-10-2022,2);
-######
+###### JOINS
 CREATE TABLE customer (
     id INT PRIMARY KEY,
     cname VARCHAR(50),
