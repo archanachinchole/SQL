@@ -1,3 +1,1 @@
-start transaction;
-insert into student(id,name,class,batch,marks)values(6,'Jojo','Stat', 2022,75);
-Commit;
+SELECT id from customer INNER JOIN orders ON customer.id = orders.id;    
