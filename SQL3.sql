@@ -37,4 +37,9 @@ VALUES
     (2, '2020-12-10', 1),
     (3, '2022-10-05', 2);
 
+
+
+SELECT id from customer INNER JOIN order ON customer.id = orders.id;    
+
+
                 
