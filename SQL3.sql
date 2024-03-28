@@ -38,8 +38,8 @@ VALUES
     (3, '2022-10-05', 2);
 
 
-
-SELECT id from customer INNER JOIN order ON customer.id = orders.id;    
+use first;
+SELECT customer_id from customer INNER JOIN order1  ON customer.id = order1.id;    
 
 
                 
