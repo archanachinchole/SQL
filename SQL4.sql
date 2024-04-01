@@ -34,3 +34,24 @@ JOIN student AS s2 ON s1.id = s2.id;
 
 select t1.name as teach, t2.name as teach2 from teacher as t1 join teacher as t2 on t1.student_id = t2.id;
 
+
+#set operatorations
+select  name from student union SELECT name from teacher;
+select name from student union ALL select name from teacher;
+
+select name from student INTERSECT select name from teacher;
+# error in above code so use a below code
+# INTERSECT & RIGHT JOIN are same
+
+SELECT s.name
+FROM student s
+INNER JOIN teacher t ON s.name = t.name;
+
+select name from student except select name from teacher;
+# error in above code so use a below code
+# except & RIGHT JOIN are same
+
+SELECT s.name
+FROM student s
+LEFT JOIN teacher t ON s.name = t.name;
+
