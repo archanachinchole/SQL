@@ -24,3 +24,11 @@ SELECT s1.name
 FROM student AS s1
 JOIN student AS s2 ON s1.name = s2.name;
 
+SELECT s1.id
+FROM student AS s1SELECT t1.id
+FROM teacher AS t1
+JOIN teacher AS t2 ON t1.id = t2.id;
+
+JOIN student AS s2 ON s1.id = s2.id;
+
+
