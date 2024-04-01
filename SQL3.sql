@@ -1,5 +1,5 @@
 
-
+use first;
 create table customer2(id int primary key, cname varchar(50),email varchar(50));
 insert INTO customer2(id,cname,email)values
                     (1,'Ashok','ashokh@gmail.com'),

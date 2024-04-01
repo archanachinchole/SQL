@@ -1,3 +1,3 @@
-SELECT customer_id 
-FROM customer 
-RIGHT OUTER JOIN orders ON customer.id = orders.customer_id;
+SELECT s1.name
+FROM student AS s1
+JOIN student AS s2 ON s1.name = s2.name;
