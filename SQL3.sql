@@ -1,48 +1,15 @@
+CREATE DATABASE shopping;
+CREATE table customers(id int primary key, name varchar(50), email varchar(50));
+CREATE TABLE shipper (id INT PRIMARY KEY, address VARCHAR(50), customer_id INTFOREIGN KEY (customer_id) REFERENCES customer(id));
 
-use first;
-create table customer2(id int primary key, cname varchar(50),email varchar(50));
-insert INTO customer2(id,cname,email)values
-                    (1,'Ashok','ashokh@gmail.com'),
-                    (2,'Namdev','namedev@gmail.com'),
-                    (3,'Aashvini','aashvini@gmail.com');
+insert into customer(id,name,email)values
+                    (1,'Soji','soji1@gmail.com'),
+                    (2,'Roya','Roya2@gmail.com'),
+                    (3,'Tiya','Tiya3@gmail.ciom'),
+                    (4,'jojo','jojo4@gmail.com');
 
-create table order(id int primary key, odate date, customer2_id int,foreign key(customer2_id) REFERENCES customer2(id));
-insert INTO order(id,odate, customer2_id)values
-                 (1,20-01-2010,3),
-                 (2,10-12-2020,1),
-                 (3,05-10-2022,2);
-###### JOINS
-CREATE TABLE customer (
-    id INT PRIMARY KEY,
-    cname VARCHAR(50),
-    email VARCHAR(50)
-);
-
-INSERT INTO customer (id, cname, email)
-VALUES
-    (1, 'Ashok', 'ashokh@gmail.com'),
-    (2, 'Namdev', 'namedev@gmail.com'),
-    (3, 'Aashvini', 'aashvini@gmail.com');
-
-CREATE TABLE orders (
-    id INT PRIMARY KEY,
-    odate DATE,
-    customer_id INT,
-    FOREIGN KEY (customer_id) REFERENCES customer(id)
-);
-
-INSERT INTO orders (id, odate, customer_id)
-VALUES
-    (1, '2010-01-20', 3),
-    (2, '2020-12-10', 1),
-    (3, '2022-10-05', 2);
-
-
-use first;
-SELECT customer_id from customer INNER JOIN order1  ON customer.id = order1.id; 
-SELECT customer_id from customer LEFT JOIN order1  ON customer.id = order1.id;    
-SELECT customer_id from customer RIGHT JOIN order1  ON customer.id = order1.id;    
-
-
-
-                
+insert into shipper(id,address,customer_id)VALUES
+                     (1,'lajpat Nagar',2),
+                     (2,'pradhikaran Aakurdi',1),
+                     (3,'crisent Collany',3),
+                     (4,'Shivaji Tour',2);
