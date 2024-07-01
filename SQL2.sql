@@ -17,6 +17,7 @@ insert into teacher(id, name, subject, deparment, student_id)values
                    (4,'Kiran Mam','DBMS','IT',1); 
 
 select  teacher.id, teacher.name, teacher.subject, teacher.deparment from teacher
+
 JOIN student on teacher.student_id = student.id where student.class='MCA';
 
 # use update for add a col. & values
