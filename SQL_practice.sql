@@ -37,3 +37,4 @@ select  * FROM teachers where deparment = 'statistics';
 select * FROM student1 WHERE name='gauri';
 delete from student1 where id=5;
 SELECT * from student1;
+SELECT * from teachers;
