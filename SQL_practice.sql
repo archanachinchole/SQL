@@ -16,4 +16,10 @@ insert INTO student1(id, name, class, batch, teachers_id) values
                      
 
 
+SELECT student1.id, student1.name, student1.class, student1.batch, teachers.name AS teacher_name
+FROM student1
+JOIN teachers ON student1.teachers_id = teachers.id
+WHERE teachers.deparment = 'math';
 
+SELECT * from student1;
+SELECT * from teachers;
