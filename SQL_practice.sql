@@ -23,3 +23,17 @@ WHERE teachers.deparment = 'math';
 
 SELECT * from student1;
 SELECT * from teachers;
+
+alter table student1 add column email varchar(50);
+
+-- Update email for each student
+update student1 set email = 'puja@gmail.com' where id=1;
+update student1 set email = 'jiya1@gmail.com' where id=2;
+update student1 set email = 'raj@gmail.com' where id=3;
+update student1 set email = 'abhi7@gmail.com' where id=4;
+update student1 set email = 'gauri@gmail.com' where id=5;
+
+select  * FROM teachers where deparment = 'statistics';
+select * FROM student1 WHERE name='gauri';
+delete from student1 where id=5;
+SELECT * from student1;
