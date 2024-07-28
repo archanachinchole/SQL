@@ -55,3 +55,51 @@ ON
     parents.member = child.parents_member
 GROUP BY 
     parents.name;
+
+
+#8. Retrieve parent-child pairs where both have the same personality trait
+
+SELECT 
+    parents.name AS parent_name, 
+    child.name AS child_name, 
+    parents.personality AS personality
+FROM 
+    parents
+JOIN 
+    child 
+ON 
+    parents.member = child.parents_member
+WHERE 
+    parents.personality = child.personality;
+
+#9. List all parents and their children, including parents without children
+
+SELECT 
+    parents.member AS parent_id, 
+    parents.name AS parent_name, 
+    parents.personality AS parent_personality, 
+    parents.age AS parent_age, 
+    child.member AS child_id, 
+    child.name AS child_name, 
+    child.personality AS child_personality
+FROM 
+    parents
+LEFT JOIN 
+    child 
+ON 
+    parents.member = child.parents_member;
+
+#10. Find all children who have a parent older than 45 years
+
+SELECT
+      child.member as child_id,
+      child.name as child_name,
+      child.personality as child_personality 
+from
+child
+join       
+parents
+ON
+child.parents_member = parents.member
+where 
+parents.age >=50;

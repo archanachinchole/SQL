@@ -1,11 +1,13 @@
-SELECT 
-    parents.name AS parent_name, 
-    COUNT(child.member) AS number_of_children
-FROM 
-    parents
-LEFT JOIN 
-    child 
-ON 
-    parents.member = child.parents_member
-GROUP BY 
-    parents.name;
+SELECT
+      child.member as child_id,
+      child.name as child_name,
+      child.personality as child_personality 
+from
+child
+join       
+parents
+ON
+child.parents_member = parents.member
+where 
+parents.age >=50;
+
