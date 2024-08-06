@@ -146,3 +146,4 @@ update child set age=15 where member=4;
 update child set age=19 where member=5;
 
 SELECT * from child;
+##SET
