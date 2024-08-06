@@ -133,3 +133,4 @@ insert into parents(member, name,personality,age)values
                    (7,'Piya','calm',50);                   
 
 
+select * from parents;
