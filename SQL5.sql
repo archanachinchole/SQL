@@ -121,3 +121,15 @@ ON
 ORDER BY 
     parents.age DESC
 LIMIT 1;
+
+######
+use family;
+select name,avg(age) from parents group by name having avg(age)>40;
+
+########## insert rows into student table
+
+insert into parents(member, name,personality,age)values
+                   (6,'Toto','innocent',71),
+                   (7,'Piya','calm',50);                   
+
+
